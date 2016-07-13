@@ -18,6 +18,30 @@
 
 ### Upcoming Release
 
+### 0.1.5 (April 1, 2016)
+
+* Protect from CSRF attacks [CVE-2016-3098]
+* [#422] [FEATURE] Add a `Select` field for displaying a drop-down menu of
+  options on form pages.
+  Options:
+  ```ruby
+  Field::Select.with_options(collection: [:foo, :bar])
+  ```
+* [#458] [BUGFIX] Update the custom field generator to match the new HTML
+  structure of forms
+
+### 0.1.4 (February 20, 2016)
+
+* [#464] [CHANGE] Replace the DashboardManifest with explicit Rails routes.
+  * Run `rails generate administrate:routes` to generate the default routes.
+* [#467] [CHANGE] Update the internal field path to fit Ruby conventions
+  ```ruby
+  # Change any instances of this...
+  require "administrate/fields/base"
+  # ...to this:
+  require "administrate/field/base"
+  ```
+
 ### 0.1.3 (January 22, 2016)
 
 * [#269] [FEATURE] Add a generator for copying default layout files
