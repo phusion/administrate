@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-ruby "2.2.3"
-
 gemspec
 
 gem "delayed_job_active_record"
